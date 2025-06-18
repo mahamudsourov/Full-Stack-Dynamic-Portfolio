@@ -53,7 +53,7 @@
     <section>
         <div class="disp-flex flex-justify-space">
             <div class="img1">
-                <img src="{{ asset('assets/images/p1.jpg') }}" alt="">
+                <img id="avatar" src="{{ asset('assets/images/p1.jpg') }}" alt="">
             </div>
             <div>
                 about
