@@ -61,7 +61,7 @@
     <div class="card-title"> Card</div>
     <div class="card-desc">Click to learn about the details of this card</div>
     <div class="card-detail">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint fuga quaerat quo rerum libero eius error omnis. Magnam impedit odio, debitis saepe sequi quae aperiam explicabo dolor nobis iure.
+      <p>This is the detailed information about the card.</p>
     </div>
   </div>
 
