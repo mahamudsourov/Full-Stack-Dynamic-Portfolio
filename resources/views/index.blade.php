@@ -353,6 +353,15 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 20px 30px;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                background-color: #1e1e1e;
+            }
+
+            .hamburger {
+                display: flex;
+                margin-left: auto;
             }
 
             nav ul {
@@ -378,11 +387,19 @@
             }
 
             .card {
-                width: 100%;
-                max-width: 90%;
+                margin: 0 auto;
             }
 
+            .contact-form {
+                flex: 1 1 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+                margin-left: 0;
+            }
         }
+
 
         .skill-card {
             flex: 1 1 300px;
@@ -449,7 +466,10 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 20px 30px;
-                position: relative;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                background-color: #1e1e1e;
             }
 
             .hamburger {
