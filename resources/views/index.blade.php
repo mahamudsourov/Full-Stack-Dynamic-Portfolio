@@ -315,6 +315,24 @@
             color: #ccc;
         }
 
+        .footer-social {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-social a {
+            color: #00bfa6;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .footer-social a:hover {
+            color: #009c87;
+        }
+
+
         @media (max-width: 1024px) {
             .portfolio-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -363,6 +381,7 @@
                 width: 100%;
                 max-width: 90%;
             }
+
         }
 
         .skill-card {

@@ -199,5 +199,19 @@
     <!-- Footer -->
     <footer class="footer">
         <p>© 2025. All rights reserved by Sourov.</p>
+
+        <div class="footer-social">
+            <a href="https://github.com" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            
+            <a href="https://facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            
+        </div>
     </footer>
 @endsection
