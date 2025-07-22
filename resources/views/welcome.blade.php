@@ -13,15 +13,15 @@
         </div>
 
         <nav id="navbar">
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#About">About Me</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="assets/Sourov_Resume.pdf" download class="resume-btn">Resume</a></li>
-            </ul>
-        </nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="assets/Sourov_Resume.pdf" download class="resume-btn">Resume</a></li>
+        </ul>
+    </nav>
     </header>
 
     <!-- Hero Section -->
@@ -167,6 +167,9 @@
 
 
     <div class="section-divider"></div>
+
+    {{-- Achievements --}}
+    
 
     <!-- Contact -->
     <section id="contact" class="section">
