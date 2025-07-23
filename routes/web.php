@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthenticationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// Login Routes
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+Route::post('/login', [AuthenticationController::class, 'login'])->name('login');
+
+// Register Routes
+Route::get('/register', function () {
+    return view('auth.register');
+});
+
+Route::post('/register', [AuthenticationController::class, 'register'])->name('register');
+
 
 Route::get('/', function () {
     return view('welcome');
