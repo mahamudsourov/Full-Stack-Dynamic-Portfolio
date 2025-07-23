@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -15,9 +15,9 @@ class AuthenticationController extends Controller
         ]);
 
         if(Auth::attempt($credentials)){
-            echo "Login Successful";
+            return redirect("/admin/dashboard");
         }else{
-            echo "Login Failed";
+            return redirect("/login");
         }
 
     }
@@ -28,6 +28,14 @@ class AuthenticationController extends Controller
             'email' => "required" ,
             'password' => "required" , 
         ]);
+
+        $user = User::create([
+            "name" => $request->name,
+            "email" => $request->email,
+            "password" => bcrypt($request->password),
+        ]);
+
+        echo "Registration Successful";
 
     }
 

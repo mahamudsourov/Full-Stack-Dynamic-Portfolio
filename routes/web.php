@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\AuthenticationController;
+use App\Http\Controllers\DashboardController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +30,10 @@ Route::get('/register', function () {
 
 Route::post('/register', [AuthenticationController::class, 'register'])->name('register');
 
+// Admin Dashboard Routes
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+});
 
 Route::get('/', function () {
     return view('welcome');
