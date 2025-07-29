@@ -41,15 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     inputs.forEach(input => {
       input.style.border = ''; 
-      
-
       const value = input.value.trim();
 
       if (!value) {
         allValid = false;
         input.style.border = '2px solid red';
       } else {
-        
         if (input.type === 'email') {
           if (!emailRegex.test(value)) {
             allValid = false;
@@ -79,4 +76,24 @@ document.addEventListener("DOMContentLoaded", () => {
       messageDiv.textContent = '';
     }, 4000);
   });
+
+  // 🔽 NEW: Reveal on Scroll
+  const reveals = document.querySelectorAll('.reveal');
+
+  function revealOnScroll() {
+    reveals.forEach((el) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible) {
+        el.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+
+  // Trigger reveal once on load (for sections already in view)
+  revealOnScroll();
 });

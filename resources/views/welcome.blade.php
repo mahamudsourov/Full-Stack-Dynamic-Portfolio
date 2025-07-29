@@ -13,15 +13,17 @@
         </div>
 
         <nav id="navbar">
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#About">About Me</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="assets/Sourov_Resume.pdf" download class="resume-btn">Resume</a></li>
-        </ul>
-    </nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#About">About Me</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="assets/Sourov_Resume.pdf" download class="resume-btn">Resume</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -168,8 +170,81 @@
 
     <div class="section-divider"></div>
 
-    {{-- Achievements --}}
-    
+
+    <!-- Experiences -->
+    <section id="experiences" class="section">
+        <div class="section-header">
+            <h2 class="head">Experiences</h2>
+            <p>Where I've worked and what I've learned along the way</p>
+        </div>
+        <div class="experience-container reveal">
+            <div class="experience-item">
+                <div class="experience-dot"></div>
+                <div class="experience-content">
+                    <h3>Web Developer</h3>
+                    <span class="experience-org">Remote · 2024 - Present</span>
+                    <p>Developed multiple full-stack web apps using Laravel and Vue. Handled payments, REST APIs, and client
+                        communication.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-dot"></div>
+                <div class="experience-content">
+                    <h3>Intern.</h3>
+                    <span class="experience-org">Dhaka · Jan 2024 - Apr 2024</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, deserunt.</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-dot"></div>
+                <div class="experience-content">
+                    <h3>Volunteer Researcher - 4IR Lab</h3>
+                    <span class="experience-org">DIU · 2024</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, laboriosam amet harum fugiat culpa molestiae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    {{-- Achivements --}}
+
+    <section id="achievements" class="section">
+        <div class="section-header">
+            <h2 class="head">Achievements</h2>
+            <p>Key recognitions and certifications I've earned</p>
+        </div>
+
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <img src="assets/images/nft.webp" alt="">
+                <div class="achievement-text">
+                    <h3>AI Certificate - Microsoft</h3>
+                    <p>AgentX competition by Microsoft.</p>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <img src="assets/images/cert2.jpg" alt="">
+                <div class="achievement-text">
+                    <h3>ML Certification - Coursera</h3>
+                    <p>Completed Deep Learning Specialization by Andrew Ng on Coursera (2023).</p>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <img src="assets/images/cert3.jpg" alt="">
+                <div class="achievement-text">
+                    <h3>Best Poster Award</h3>
+                    <p>Awarded at DIU Research Fair 2023 for presenting novel AI approach.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
 
     <!-- Contact -->
     <section id="contact" class="section">
@@ -210,11 +285,11 @@
             <a href="https://linkedin.com" target="_blank" title="LinkedIn">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            
+
             <a href="https://facebook.com" target="_blank" title="Facebook">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            
+
         </div>
     </footer>
 @endsection
