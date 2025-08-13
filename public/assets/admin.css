@@ -1,0 +1,169 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    height: 100%;
+    color: #333;
+}
+
+/* Wrapper for layout */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background-color: #ecf0f3;
+}
+
+/* Sidebar Styling */
+.admin-sidebar {
+    width: 240px;
+    background-color: #1e272e;
+    color: #ecf0f1;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.admin-sidebar nav ul li a,
+.logout-button {
+    display: block;
+    padding: 12px 25px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.admin-sidebar nav ul li a:hover,
+.logout-button:hover {
+    background-color: #3a3f44;
+    border-left: 4px solid #00b894;
+}
+
+/* Main Admin Area */
+.admin-main {
+    flex: 1;
+    padding: 40px 50px;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+}
+
+/* Admin Title */
+.admin-main h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+}
+
+/* Dashboard Summary Boxes */
+.dashboard-summary {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.summary-card {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+}
+
+.summary-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.summary-card p {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Footer */
+.admin-footer {
+    background-color: #1e272e;
+    color: #bdc3c7;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 0.95rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .admin-wrapper {
+        flex-direction: column;
+    }
+
+    .admin-sidebar {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 10px;
+        justify-content: space-around;
+    }
+
+    .admin-sidebar nav ul {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+    }
+
+    .admin-sidebar nav ul li {
+        margin: 0;
+    }
+
+    .admin-main {
+        padding: 25px 20px 80px;
+    }
+
+    .dashboard-summary {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summary-card {
+        width: 90%;
+    }
+}
