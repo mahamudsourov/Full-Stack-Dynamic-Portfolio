@@ -167,3 +167,183 @@ body, html {
         width: 90%;
     }
 }
+
+/* ==============================
+   Admin Sidebar Forms Styling
+   Applies to all forms in admin pages
+============================== */
+
+.admin-main form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.admin-main form .form-group {
+    margin-bottom: 15px;
+}
+
+.admin-main form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.admin-main form input,
+.admin-main form select,
+.admin-main form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fdfdfd;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.admin-main form input:focus,
+.admin-main form select:focus,
+.admin-main form textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+.admin-main form button,
+.admin-main form input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-main form button:hover,
+.admin-main form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Optional: responsive fix */
+@media (max-width: 768px) {
+    .admin-main form {
+        padding: 20px;
+        width: 95%;
+    }
+}
+
+/* ==============================
+   Manage Users Page Styling
+============================== */
+
+/* Page Heading */
+.admin-main h1,
+.admin-main h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
+
+/* Success Message */
+.admin-main p {
+    font-weight: 600;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.admin-main form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.admin-main form input[type="text"],
+.admin-main form input[type="email"],
+.admin-main form input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.admin-main form input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+/* Submit Button */
+.admin-main form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.admin-main form button:hover {
+    background-color: #2980b9;
+}
+
+/* Table Styling */
+.admin-main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.admin-main table th,
+.admin-main table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.admin-main table th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 600;
+}
+
+.admin-main table tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .admin-main form {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .admin-main table {
+        font-size: 13px;
+    }
+}
+

@@ -72,3 +72,16 @@ Route::prefix('admin')->group(function () {
     Route::get('/personal-details', [PersonalDetailsController::class, 'index']);
     Route::post('/personal-details', [PersonalDetailsController::class, 'store']);
 });
+
+use App\Http\Controllers\ExperienceController;
+
+Route::get('/admin/experiences', [ExperienceController::class, 'index']);
+Route::post('/admin/experiences', [ExperienceController::class, 'store']);
+Route::delete('/admin/experiences/{id}', [ExperienceController::class, 'destroy']);
+
+use App\Http\Controllers\AchievementController;
+
+Route::get('/admin/achievements', [AchievementController::class, 'index'])->name('achievements.index');
+Route::post('/admin/achievements', [AchievementController::class, 'store'])->name('achievements.store');
+Route::delete('/admin/achievements/{id}', [AchievementController::class, 'destroy'])->name('achievements.destroy');
+
